@@ -89,10 +89,10 @@ Parameters:
     Default: t2.micro
     Description: WebServer EC2 instance type
     Type: String
-  KeyName: spring2023
+  KeyName:
     ConstraintDescription: must be the name of an existing EC2 KeyPair.
     Description: Name of an existing EC2 KeyPair to enable SSH access to the instances
-    Type: AWS::EC2::KeyPair::KeyName
+    Type: AWS::EC2::KeyPair::spring2023
     Default: General-key-1 #update your ec2 key here
   SSHLocation:
     AllowedPattern: (\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})/(\d{1,2})
